@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #0ed29b;
+    color: white;
+}
+
+h1,
+h2{
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+button,
+select{
+    border: none;
+    font-size: 1.25rem;
+    padding: .5rem .5rem;
+    background-color: rgb(9, 24, 181);
+    color: white;
+}
+
+
+section.main-content{
+    width: 700px;
+    height: 650px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid white;
+
+}
+
+article.square{
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+    border: 2px solid white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+article.square.clicked.bg-blue{
+    background-color: rgb(9, 24, 181);
+}
+article.square.clicked.bg-red{
+    background-color: rgb(234, 19, 19);
+}
+
+article.square.clicked span{
+    display: inline-block;
+}
